@@ -1,0 +1,96 @@
+@import 'normalize.css/normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #e5e5e5;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.App {
+  margin: 0 auto;
+  max-width: 550px;
+  background: #ffffff;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.header {
+  height: 55px;
+  margin-bottom: 15px;
+  align-items: center;
+  gap: 7px;
+  background: #f55a5a;
+
+  &__logo {
+    height: 24px;
+  }
+
+  &__logo-text {
+    font-weight: 500;
+    font-size: 14.5px;
+    letter-spacing: -0.075em;
+    color: #ffffff;
+  }
+}
+
+main {
+  padding: 0 40px;
+}
+
+.card {
+  padding: 20px 0;
+  max-width: 478px;
+  gap: 19px;
+  font-size: 10.24px;
+  color: #2b283a;
+  border-bottom: 1px solid #f5f5f5;
+
+  &__img {
+    width: 126px;
+    height: 168px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  &__info {
+    flex-direction: column;
+
+    & > h2 {
+      margin: 4px 0 0 0;
+      font-size: 25px;
+    }
+  }
+
+  &__location-info {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__country {
+    margin: 0 8px 0 0;
+    text-transform: uppercase;
+    letter-spacing: 0.17em;
+  }
+
+  &__link {
+    color: #918e9b;
+  }
+
+  &__text {
+    line-height: 150%;
+  }
+}
